@@ -667,9 +667,9 @@ header.top_header .wrapper nav.right_nav ul li a.hover{
     color: #FFFFFF;
 }
 
-/* Team block */
+/* Title style */
 
-.team h2.box_title{
+ h2.box_title{
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
@@ -678,7 +678,7 @@ header.top_header .wrapper nav.right_nav ul li a.hover{
     text-align: center;
 }
 
-.team .subtitle{
+ .subtitle{
     display: block;
     text-align: center;
     font-family: Waiting for the Sunrise;
@@ -689,6 +689,8 @@ header.top_header .wrapper nav.right_nav ul li a.hover{
     color: #F7A1A8;
     margin-bottom: 60px;
 }
+
+/* Team block */
 .team_list{
     display: flex;
     flex-wrap: wrap;
@@ -977,6 +979,10 @@ a{
 .col_left .thumbnail{
     margin-bottom: 40px;
 }
+.menu_info .thumbnail img{
+    max-width: 100%;
+    height: auto;
+}
 .menu_info h3{
     font-style: normal;
     font-weight: bold;
@@ -1009,6 +1015,130 @@ a{
     color: #FFFFFF;
 }
 .menu_info a.button:hover{
-    background: #F7A1A8,
-    100%;
+    background: #F7A1A8;
+    transition: all 300ms ease-in-out;
+}
+.our_menu{
+    background: #B1CFE1 url(/img/menu-list-bg.png) center center no-repeat;
+    background-size:contain;
+    padding-top:170px;
+    padding-bottom:170px;
+    margin: 30px 50px 50px 50px;
+}
+.our_menu .box_title{
+    color:#fff;
+}
+.our_menu .subtitle{
+    color:#DFEEB6;
+}
+.menu_list{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu_list .menu_item{
+    width: calc(50% - 42.5px);
+    margin-bottom: 42px;
+    display: flex;
+}
+.menu_list .menu_item .thumbnail{
+    margin-right: 33px;
+}
+.menu_list .menu_item .thumbnail img{
+    border-radius: 100%;
+}
+.menu_list .menu_item h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+.menu_list .menu_item p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.menu_list .menu_item .price{
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 93px;
+    color: #DFEEB6;
+    margin-left: 20px;
+    line-height: 50px;
+}
+
+/* Pricing block */
+.pricing_tables .wrapper .pricing{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.pricing .price_item{
+    width: calc(33.3% - 13.3px);
+    text-align: center;
+    background: #DFEEB6;
+    border-radius: 5px;
+    padding: 27px 34px 130px 34px;
+    box-sizing:border-box;
+    position: relative;
+}
+.pricing .price_item:nth-child(2){
+    background: #C9E3F4; 
+}
+
+.pricing .price_item::after{
+    content:"";
+    width: 100%;
+    height: 110px;
+    background:url(/img/bottom.svg) center center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.pricing .price_item .plan{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+.pricing .price_item .price{
+    font-family: Waiting for the Sunrise;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FEA3AC;
+    margin-bottom: 14px;
+}
+.pricing .price_item .description{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #9A9A9A;
+    margin-bottom: 47px;
+}
+.pricing .price_item .more{
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+.pricing .price_item .more:hover{
+    background:#fff;
+    color:#FEA3AC;
+    transition: all 300ms ease-in-out;
 }
