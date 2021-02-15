@@ -535,6 +535,7 @@ header.top_header .wrapper nav.right_nav ul li a.hover{
 }
 .page_heading.about_page{
     background: transparent url(/img/about_header.png) center center no-repeat;
+    background-size: cover;
 }
 .svg_style::before{
     content:"";
@@ -544,6 +545,8 @@ header.top_header .wrapper nav.right_nav ul li a.hover{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 9;
+    background-size:cover;
 }
 .svg_style::after{
     content:"";
@@ -553,6 +556,8 @@ header.top_header .wrapper nav.right_nav ul li a.hover{
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 9;
+    background-size:cover;
 }
 
 .page_heading h2{
@@ -855,6 +860,7 @@ a{
 
 .page_heading.blog_page {
     background: transparent url(/img/blog_img.jpg) center center no-repeat;
+    background-size: cover;
 }
 .blog_archive{
     display: flex;
@@ -960,6 +966,7 @@ a{
 /* Menu page styles */
 .menu_page{
     background:transparent url("/img/menu-page.jpg") center center no-repeat;
+    background-size: cover;
 }
 .menu_info{
     background:url(/img/menu-bg.png) left bottom no-repeat;
@@ -1146,6 +1153,7 @@ a{
 /* Shop page styles */
 .shop_page{
     background:url(/img/shop-bg.jpg) center center no-repeat;
+    background-size: cover;
 }
 .shop{
     display: flex;
@@ -1219,4 +1227,59 @@ a{
     font-size: 30px;
     line-height: 50px;
     color: #FEA3AC;
+}
+
+/* Home page styles */
+
+.homeslider{
+    margin: 0 50px;
+}
+.homeslider img{
+    width: 100%;
+    height: auto;
+}
+.homeslider .slide figure{
+    position: relative;
+}
+.homeslider .slide figure figcaption{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.homeslider .slide .title_one{
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 170px;
+    line-height: 281px;
+    color: #F7A1A8;
+    position: absolute;
+    top:22%;
+    right: 17%;
+}
+.homeslider .slide .title_two {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 250px;
+    line-height: 250px;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    position: absolute;
+    left:10%;
+    top: 50%;
+}
+.homeslider .slide .title_three {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 99px;
+    letter-spacing: 10px;
+    color: #433840;
+    position: absolute;
+    left:30%;
+    top: 70%;
 }
