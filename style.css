@@ -953,3 +953,62 @@ a{
     color:#fff;
     transition: all 300ms ease-in-outgit;
 }
+
+/* Menu page styles */
+.menu_page{
+    background:transparent url("/img/menu-page.jpg") center center no-repeat;
+}
+.menu_info{
+    background:url(/img/menu-bg.png) left bottom no-repeat;
+}
+.menu_info .wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.menu_info .wrapper .col_left,
+.menu_info .wrapper .col_right{
+    width: calc(50% - 10px);
+    text-align: center;
+}
+.col_right .thumbnail{
+    margin-top: 40px;
+}
+.col_left .thumbnail{
+    margin-bottom: 40px;
+}
+.menu_info h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #433840;
+    margin-bottom: 22px;
+}
+.menu_info p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #9A9A9A;
+    max-width: 490px;
+    margin:0 auto;
+    margin-bottom: 35px;
+}
+.menu_info a.button{
+    background: #DFEEB6;
+    border-radius: 5px;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+.menu_info a.button:hover{
+    background: #F7A1A8,
+    100%;
+}
